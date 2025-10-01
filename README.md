@@ -1,5 +1,10 @@
 # Сравнение производительности Flutter, Tauri и Electron
 
+> ⚠️ Все приведённые значения **примерные и усреднённые**, они могут отличаться в зависимости от версии библиотек, настроек окружения и конкретных приложений.
+> В таблицах обозначения: **F = Flutter**, **T = Tauri**, **E = Electron**.
+
+---
+
 ## Общая таблица сравнения (по приложениям, средние значения)
 
 | Метрика              | Flutter (среднее) | Tauri (среднее) | Electron (среднее) | Разница Tauri vs Flutter | Разница Electron vs Flutter |
@@ -57,3 +62,20 @@
 | Network Req.   | F: 56 T: 57 E: 55 | F: 240 T: 170 E: 350 | F: 11 T: 8 E: 15 | F: 25 T: 7 E: 130 | F: 1.1 T: 0.7 E: 2.1 | F: 30 T: 20 E: 35 |
 | DB Ops         | F: 54 T: 55 E: 53 | F: 260 T: 180 E: 380 | F: 13 T: 10 E: 17 | F: 28 T: 7 E: 120 | F: 1.3 T: 0.9 E: 2.4 | F: 15 T: 8 E: 22  |
 | Graphics Rend. | F: 59 T: 53 E: 51 | F: 230 T: 160 E: 340 | F: 14 T: 11 E: 18 | F: 26 T: 6 E: 115 | F: 1.4 T: 1.0 E: 2.3 | F: 12 T: 18 E: 25 |
+
+---
+
+## Устройства, на которых проводились тесты
+
+- **macOS Air M2**, 60 Гц
+- **ThinkBook X AI 2025**, Intel i9, 32 ГБ RAM, 120 Гц (урезано до 60 Гц в Windows)
+- **Dell i5-8500 + Arch Linux + KDE Plasma**, 16 ГБ RAM, монитор Samsung LED C24F390FH, 60 Гц
+- **Dell i5-8500 + Arch Linux + GNOME 48**, 16 ГБ RAM, монитор Samsung LED C24F390FH, 60 Гц
+- **Dell i5-8500 + Manjaro + KDE Plasma**, 16 ГБ RAM, монитор Samsung LED C24F390FH, 60 Гц
+- **Dell i5-8500 + Ubuntu 24**, 16 ГБ RAM, монитор Samsung LED C24F390FH, 60 Гц
+- **Raspberry Pi 5**, 8 ГБ RAM, монитор Samsung LED C24F390FH, 60 Гц
+- **Raspberry Pi 5**, 8 ГБ RAM, монитор Mucai 10.5 (частота ниже 60 Гц, точно не определена)
+- **Steam Deck OLED**, 90 Гц (тесты при энергопотреблении 15 Вт, 20 Вт и 45 Вт)
+- **Samsung Galaxy S22 Plus**, 120 Гц
+- **Samsung Galaxy S22 Plus**, 60 Гц
+- **Pixel 8**, 60 Гц
